@@ -10,6 +10,7 @@ server:
   
 
 eureka:
+  preferSameZone= true
   instance:
     hostname: localhost
   client:
