@@ -35,14 +35,14 @@ spring:
 eureka:
   instance:
     preferIpAddress: true
-    leaseRenewalIntervalInSeconds: 30
-    leaseExpirationDurationInSeconds: 30
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
       defaultZone: http://192.168.12.103:8761/eureka/,http://192.168.12.104:8761/eureka/
     healthcheck:
       enabled: false
     lease:
-      duration: 30
+      duration: 5
 schedule:
   scheduleTimeGap: 7
