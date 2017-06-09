@@ -6,33 +6,27 @@ server:
 
 # Defines the Eureka server that is used by the Netflix OSS components to use as the registry
 # for server discovery
-
-  
-spring:
-  profiles: 192.168.12.103
 eureka:
   instance:
-    hostname: 192.168.12.103
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://192.168.12.104/eureka/  
-  server:
-    enableSelfPreservation: false
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/       
       
 ---
 
 spring:
-  profiles: 192.168.12.104
+  profiles: docker
 eureka:
   instance:
-    hostname: 192.168.12.104
+    hostname: docker
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://192.168.12.103/eureka/  
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  
       
 logging:
  file: Eureka.log
