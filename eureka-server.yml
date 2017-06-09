@@ -9,7 +9,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.12.103
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -18,8 +18,7 @@ eureka:
       
 ---
 
-spring:
-  profiles: localhost1
+
 eureka:
   instance:
     hostname: localhost1
