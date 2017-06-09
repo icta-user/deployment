@@ -9,32 +9,30 @@ server:
 
   
 spring:
-  profiles: peer2
+  profiles: 192.168.12.103
 eureka:
-  preferSameZone: true
-  instance:
-    hostname: 192.168.12.104
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://192.168.12.103:${server.port}/eureka/  
-  server:
-    enableSelfPreservation: false
-      
----
-
-spring:
-  profiles: peer1
-eureka:
-  preferSameZone: true
   instance:
     hostname: 192.168.12.103
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://192.168.12.104:${server.port}/eureka/  
+      defaultZone: http://192.168.12.104:8761/eureka/  
+  server:
+    enableSelfPreservation: false
+      
+---
+
+spring:
+  profiles: 192.168.12.104
+eureka:
+  instance:
+    hostname: 192.168.12.104
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://192.168.12.103:8761/eureka/  
       
 logging:
  file: Eureka.log
