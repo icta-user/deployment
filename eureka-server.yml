@@ -6,9 +6,11 @@ server:
 
 # Defines the Eureka server that is used by the Netflix OSS components to use as the registry
 # for server discovery
+spring:
+  profiles: localhost
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.12.103
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -18,10 +20,10 @@ eureka:
 ---
 
 spring:
-  profiles: docker
+  profiles: localhost1
 eureka:
   instance:
-    hostname: docker
+    hostname: 192.168.12.104
   client:
     registerWithEureka: false
     fetchRegistry: false
