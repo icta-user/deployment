@@ -21,7 +21,7 @@ eureka:
 
 eureka:
   instance:
-    hostname: 192.168.12.103
+    hostname: 192.168.12.102
   client:
     registerWithEureka: false
     fetchRegistry: false
