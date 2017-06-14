@@ -21,14 +21,34 @@ eureka:
     healthcheck:
       enabled: false
     serviceUrl:
-      defaultZone: http://192.168.12.103:8761/eureka/
+      defaultZone: http://192.168.12.102:8761/eureka/
   server:
     renewalPercentThreshold: 0.0
     enableSelfPreservation: false
     waitTimeInMsWhenSyncEmpty: 0
     
-
+---
       
+eureka:
+  instance:
+    hostname: 192.168.12.103
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    registryFetchIntervalSeconds: 30
+    leaseRenewalIntervalInSeconds: 3
+    leaseExpirationDurationInSeconds: 5
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    healthcheck:
+      enabled: false
+    serviceUrl:
+      defaultZone: http://192.168.12.102:8761/eureka/
+  server:
+    renewalPercentThreshold: 0.0
+    enableSelfPreservation: false
+    waitTimeInMsWhenSyncEmpty: 0
+   
 logging:
  file: Eureka.log
  level: INFO
