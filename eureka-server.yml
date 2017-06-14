@@ -9,7 +9,7 @@ server:
 
 eureka:
   instance:
-    hostname: 192.168.12.103
+    hostname: 192.168.12.104
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     registryFetchIntervalSeconds: 30
@@ -21,7 +21,7 @@ eureka:
     healthcheck:
       enabled: false
     serviceUrl:
-      defaultZone: http://192.168.12.104:8761/eureka/
+      defaultZone: http://192.168.12.103:8761/eureka/
   server:
     renewalPercentThreshold: 0.0
     enableSelfPreservation: false
