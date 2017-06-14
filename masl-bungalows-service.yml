@@ -46,8 +46,4 @@ eureka:
     lease:
       duration: 5
       
-ribbon:
-  eureka:
-    enabled: true
-  restclient:
-    enabled: true
+
