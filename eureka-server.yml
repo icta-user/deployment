@@ -16,7 +16,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 5
   client:
-    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: true
     healthcheck:
       enabled: false
