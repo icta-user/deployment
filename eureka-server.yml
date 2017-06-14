@@ -21,7 +21,7 @@ eureka:
     healthcheck:
       enabled: false
     serviceUrl:
-      defaultZone: http://192.168.12.102:8761/eureka/
+      defaultZone: http://192.168.12.103:8761/eureka/
   server:
     renewalPercentThreshold: 0.0
     enableSelfPreservation: false
@@ -43,7 +43,7 @@ eureka:
     healthcheck:
       enabled: false
     serviceUrl:
-      defaultZone: http://192.168.12.102:8761/eureka/
+      defaultZone: http://192.168.12.104:8761/eureka/
   server:
     renewalPercentThreshold: 0.0
     enableSelfPreservation: false
