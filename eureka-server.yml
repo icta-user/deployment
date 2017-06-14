@@ -9,24 +9,23 @@ server:
 
 eureka:
   instance:
-    hostname: 192.168.12.104
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://192.168.12.103:${server.port}/eureka/,http://192.168.12.104:${server.port}/eureka/         
-      
----
-
-
-eureka:
-  instance:
     hostname: 192.168.12.103
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    registryFetchIntervalSeconds: 30
+    leaseRenewalIntervalInSeconds: 3
+    leaseExpirationDurationInSeconds: 5
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
+    healthcheck:
+      enabled: false
     serviceUrl:
-      defaultZone: http://192.168.12.104:${server.port}/eureka/,http://192.168.12.104:${server.port}/eureka/  
+      defaultZone: http://192.168.12.104:8761/eureka/
+  server:
+    renewalPercentThreshold: 0.0
+    enableSelfPreservation: false
+    waitTimeInMsWhenSyncEmpty: 0
       
 logging:
  file: Eureka.log
