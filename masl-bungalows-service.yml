@@ -35,15 +35,14 @@ spring:
 eureka:
   instance:
     preferIpAddress: true
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
   client:
-    
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://192.168.12.103:8761/eureka/,http://192.168.12.104:8761/eureka/
-    healthcheck:
-      enabled: false
-    lease:
-      duration: 5
-      
+      defaultZone: http://192.168.12.103:8761/eureka/,http://192.168.12.104:8762/eureka/
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  IsSecure: false
 
