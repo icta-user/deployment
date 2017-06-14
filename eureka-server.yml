@@ -27,7 +27,7 @@ eureka:
     enableSelfPreservation: false
     waitTimeInMsWhenSyncEmpty: 0
     
-    
+---
 eureka:
   instance:
     hostname: 192.168.12.103
