@@ -9,7 +9,7 @@ server:
 
 eureka:
   instance:
-    hostname: peer1
+    hostname: peer2
   client:
     registerWithEureka: false
     fetchRegistry: false
