@@ -16,16 +16,7 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.12.103:${server.port}/eureka/ 
       
----
 
-eureka:
-  instance:
-    hostname: 192.168.12.104
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://192.168.12.103:${server.port}/eureka/ 
       
 logging:
  file: Eureka.log
