@@ -8,7 +8,6 @@ logging:
  file: MaslRegion.log
  level: INFO
 
-# MongoDB Properties 
 spring:
  data:
   mongodb:
