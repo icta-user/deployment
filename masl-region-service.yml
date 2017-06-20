@@ -12,8 +12,10 @@ logging:
 spring:
  data:
   mongodb:
+   dbuser: masluser
    database: MahaweliDB
-   host: 192.168.12.107
+   password: g+H1ppDyrXldSwoLBo6c6Q==
+   host: localhost
    port: 27017
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
@@ -35,13 +37,12 @@ spring:
 eureka:
   instance:
     preferIpAddress: true
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    #leaseRenewalIntervalInSeconds: 1
+    #leaseExpirationDurationInSeconds: 2
   client:
-    preferSameZoneEureka: true
     serviceUrl:
-      defaultZone: http://192.168.12.103:8761/eureka/,http://192.168.12.104:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: false
-    lease:
-      duration: 5
+    #lease:
+      #duration: 5
