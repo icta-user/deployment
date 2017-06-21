@@ -2,7 +2,7 @@ configuration:
   projectName: roomtype-service
 #RoomType Service Port
 server:
- port: 8075
+ port: 8074
    
 logging:
  file: MaslRoomType.log
