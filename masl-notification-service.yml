@@ -12,10 +12,10 @@ logging:
 spring:
  data:
   mongodb:
-   dbuser: dofuser
-   database: ForestDB
+   dbuser: masluser
+   database: MahaweliDB
    password: g+H1ppDyrXldSwoLBo6c6Q==
-   host: localhost
+   host: 192.168.12.107
    port: 27017
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
