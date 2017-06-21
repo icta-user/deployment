@@ -9,17 +9,6 @@ logging:
  level: INFO
 
 # MongoDB Properties 
-configuration:  
-  projectName: notification-service
-#Notification Service Port
-server:
- port: 8099
-   
-logging:
- file: Notification.log
- level: INFO
-
-# MongoDB Properties 
 spring:
  data:
   mongodb:
