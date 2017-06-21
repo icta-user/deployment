@@ -9,6 +9,17 @@ logging:
  level: INFO
 
 # MongoDB Properties 
+configuration:  
+  projectName: notification-service
+#Notification Service Port
+server:
+ port: 8099
+   
+logging:
+ file: Notification.log
+ level: INFO
+
+# MongoDB Properties 
 spring:
  data:
   mongodb:
@@ -57,3 +68,4 @@ email:
   permitpath1: /opt/webapps/notification/permit1.html
   receiptpath: /opt/webapps/notification/receipt.html
   bannerpath: eservices.forestdept.gov.lk/email-banner.png
+  from: MASL
