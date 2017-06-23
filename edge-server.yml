@@ -149,3 +149,12 @@ management:
   info:
    git:
     mode: full
+tokenUser: masluser
+tokenPassword: DghT@4%
+tokenLifeTime: 86400000
+tokenIssuer: MASL
+tokenSecret: MASLTokenSecret
+tokenSubject: MASLServerAccess
+tokenId: MASLTokenId
+    
+   
