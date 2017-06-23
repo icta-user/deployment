@@ -103,21 +103,24 @@ zuul:
     masl-roomtype-service:
           path: /maslroomtype/**
           serviceId: masl-roomtype-service
-  
+    masl-rooms-service:
+          path: /maslroom/**
+          serviceId: masl-rooms-service
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin 
+
   
 eureka:
   instance:
     preferIpAddress: true
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    #leaseRenewalIntervalInSeconds: 1
+    #leaseExpirationDurationInSeconds: 2
   client:
-    preferSameZoneEureka: true
     serviceUrl:
-      defaultZone: http://192.168.12.103:8761/eureka/,http://192.168.12.104:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: false
-    lease:
-      duration: 5
+    #lease:
+      #duration: 5
       
 ribbon:
   eureka:
@@ -157,4 +160,3 @@ tokenSecret: MASLTokenSecret
 tokenSubject: MASLServerAccess
 tokenId: MASLTokenId
     
-   
