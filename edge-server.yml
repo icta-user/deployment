@@ -13,51 +13,6 @@ endpoints:
 
 zuul:
   routes:
-    dof-bungalows-service:
-          path: /forestbungalow/**
-          serviceId: dof-bungalows-service
-    dof-region-service:
-          path: /forestregion/**
-          serviceId: dof-region-service
-    dof-requestertype-service:
-          path: /forestrequestertype/**
-          serviceId: dof-requestertype-service
-    dof-tax-service:
-          path: /foresttax/**
-          serviceId: dof-tax-service
-    dof-reservation-service:
-          path: /forestreservation/**
-          serviceId: dof-reservation-service
-    dof-receipts-service:
-          path: /forestreceipts/**
-          serviceId: dof-receipts-service
-    dof-rate-service:
-          path: /forestrate/**
-          serviceId: dof-rate-service
-    dof-permits-service:
-          path: /forestpermits/**
-          serviceId: dof-permits-service
-    dof-availability-service:
-          path: /forestavailability/**
-          serviceId: dof-availability-service
-    dof-payment-service:
-          path: /forestpayment/**
-          serviceId: dof-payment-service
-    dof-notification-service:
-          path: /forestnotification/**
-          serviceId: dof-notification-service
-    notification-test:
-          path: /forestnotificationtest/**
-          serviceId: notification-test      
-    dof-user-service:
-          path: /forestuser/**
-          serviceId: dof-user-service
-    dof-role-service:
-          path: /forestrole/**
-          serviceId: dof-role-service
-    dof-permission-service:
-          path: /forestpermission/**
-          serviceId: dof-permission-service
     masl-bungalows-service:
           path: /maslbungalow/**
           serviceId: masl-bungalows-service
