@@ -49,6 +49,7 @@ eureka:
       duration: 5
 schedule:
   scheduleTimeGap: 30
+  
 deductions:
   additionalTaxes : 7.5,10.5
   convenienceFee-sampath : 2.2
