@@ -15,6 +15,7 @@ spring:
    database: MahaweliDB
    host: localhost
    port: 27017
+   uri1: mongodb://masluser:Mzw4#12@192.168.12.106:27017,192.168.12.108:27017,192.168.12.107:27017/MahaweliDB?replicaSet=masl
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
    serverSelectionTimeout: 30000
