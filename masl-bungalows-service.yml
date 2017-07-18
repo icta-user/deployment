@@ -16,7 +16,7 @@ spring:
    database: MahaweliDB
    password: g+H1ppDyrXldSwoLBo6c6Q==
    host: 192.168.12.106
-   uri1: mongodb://masluser:Mzw4#12@192.168.12.106:27017,192.168.12.108:27017,192.168.12.107:27017/MahaweliDB?replicaSet=masl
+   uri1: mongodb://dofuser:Mzw4#12@192.168.12.137:27017,192.168.12.138:27017,192.168.12.136:27017/ForestDB?replicaSet=dof
    port: 27017
    maxConnectionsPerHost: 10000
    threadsAllowedToBlockForConnectionMultiplier: 5
