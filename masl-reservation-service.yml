@@ -51,6 +51,7 @@ schedule:
   scheduleTimeGap: 30
   
 deductions:
-  additionalTaxes : 
-  convenienceFee : 2
-  vatPercentage : 9.5
+  additionalTaxes : 7.5,10.5
+  convenienceFee-sampath : 2.2
+  convenienceFee-ntb : 2.2
+  vatPercentage : 17.5
