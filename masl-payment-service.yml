@@ -71,3 +71,5 @@ ntb:
   logPath: /opt/cert/ntbpg/keys/logs/
   #keyPath: C:\\merchant\\keys\\
   #logPath: C:\\merchant\\keys\\logs\\
+
+reservationURL : http://masl-reservation-service/regions/001/bungalows/001/reservations/
