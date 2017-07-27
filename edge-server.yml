@@ -114,6 +114,8 @@ tokenIssuer: MASL
 tokenSecret: MASLTokenSecret
 tokenSubject: MASLServerAccess
 tokenId: MASLTokenId
+clientLogin : /masluser/user/clientLogin
+adminLogin : /masluser/user/login
 
 authorizedHosts: eservices.mahaweli.gov.lk
     
