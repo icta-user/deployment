@@ -53,7 +53,7 @@ schedule:
 deductions:
   additionalTaxes : 
   convenienceFee-sampath : 2
-  convenienceFee-ntb : 4
+  convenienceFee-ntb : 2.5
   vatPercentage : 0
   discountMaslEmploee : 50
   discountMaslOficialVisit: 100
